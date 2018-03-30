@@ -1,0 +1,171 @@
+$title solution_parameters
+$ontext
+declare parameters for solution values
+$offtext
+
+* solution parameters - no sets used
+parameters
+
+* independent variable values set from solution levels
+  busVoltMag(i)
+  busVoltAng(i)
+  genPowReal(i,j)
+  genPowImag(i,j)
+  swshAdmImag(i)
+  busCtgVoltMag(i,k)
+  busCtgVoltAng(i,k)
+  genCtgPowImag(i,j,k)
+  swshCtgAdmImag(i,k)
+  areaCtgPowRealChange(i,k)
+
+* independent variable values set from solution levels
+* mixed unit convention for writing out to solution files
+  busVoltMagSol(i)
+  busVoltAngSol(i)
+  genPowRealSol(i,j)
+  genPowImagSol(i,j)
+  swshAdmImagSol(i)
+  busCtgVoltMagSol(i,k)
+  busCtgVoltAngSol(i,k)
+  genCtgPowImagSol(i,j,k)
+  swshCtgAdmImagSol(i,k)
+  areaCtgPowRealChangeSol(i,k)
+
+* derived variable values
+  cost
+  genCost(i,j)
+  genPlCoeff(i,j,i1)
+  loadPowReal(i,j)
+  loadPowImag(i,j)
+  fxshPowReal(i,j)
+  fxshPowImag(i,j)
+  lineCurrReal1(i1,i2,j)
+  lineCurrImag1(i1,i2,j)
+  lineCurrReal2(i1,i2,j)
+  lineCurrImag2(i1,i2,j)
+  linePowReal1(i1,i2,j)
+  linePowImag1(i1,i2,j)
+  linePowReal2(i1,i2,j)
+  linePowImag2(i1,i2,j)
+  xfmrCurrReal1(i1,i2,j)
+  xfmrCurrImag1(i1,i2,j)
+  xfmrCurrReal2(i1,i2,j)
+  xfmrCurrImag2(i1,i2,j)
+  xfmrPowReal1(i1,i2,j)
+  xfmrPowImag1(i1,i2,j)
+  xfmrPowReal2(i1,i2,j)
+  xfmrPowImag2(i1,i2,j)
+  swshPowImag(i)
+  loadCtgPowReal(i,j,k)
+  loadCtgPowImag(i,j,k)
+  fxshCtgPowReal(i,j,k)
+  fxshCtgPowImag(i,j,k)
+  genCtgPowReal(i,j,k)
+  lineCtgCurrReal1(i1,i2,j,k)
+  lineCtgCurrImag1(i1,i2,j,k)
+  lineCtgCurrReal2(i1,i2,j,k)
+  lineCtgCurrImag2(i1,i2,j,k)
+  lineCtgPowReal1(i1,i2,j,k)
+  lineCtgPowImag1(i1,i2,j,k)
+  lineCtgPowReal2(i1,i2,j,k)
+  lineCtgPowImag2(i1,i2,j,k)
+  xfmrCtgCurrReal1(i1,i2,j,k)
+  xfmrCtgCurrImag1(i1,i2,j,k)
+  xfmrCtgCurrReal2(i1,i2,j,k)
+  xfmrCtgCurrImag2(i1,i2,j,k)
+  xfmrCtgPowReal1(i1,i2,j,k)
+  xfmrCtgPowImag1(i1,i2,j,k)
+  xfmrCtgPowReal2(i1,i2,j,k)
+  xfmrCtgPowImag2(i1,i2,j,k)
+  swshCtgPowImag(i,k)
+
+* constraint violation values
+  busVoltMagLoViol(i)
+  busVoltMagUpViol(i)
+  genPowRealLoViol(i,j)
+  genPowRealUpViol(i,j)
+  genPowImagLoViol(i,j)
+  genPowImagUpViol(i,j)
+  lineCurrMag1UpViol(i1,i2,j)
+  lineCurrMag2UpViol(i1,i2,j)
+  xfmrPowMag1UpViol(i1,i2,j)
+  xfmrPowMag2UpViol(i1,i2,j)
+  swshAdmImagLoViol(i)
+  swshAdmImagUpViol(i)
+  busCtgVoltMagLoViol(i,k)
+  busCtgVoltMagUpViol(i,k)
+  genCtgPowRealLoViol(i,j,k)
+  genCtgPowRealUpViol(i,j,k)
+  genCtgPowImagLoViol(i,j,k)
+  genCtgPowImagUpViol(i,j,k)
+  lineCtgCurrMag1UpViol(i1,i2,j,k)
+  lineCtgCurrMag2UpViol(i1,i2,j,k)
+  xfmrCtgPowMag1UpViol(i1,i2,j,k)
+  xfmrCtgPowMag2UpViol(i1,i2,j,k)
+  swshCtgAdmImagLoViol(i,k)
+  swshCtgAdmImagUpViol(i,k)
+  busPowRealBalanceViol(i)
+  busPowImagBalanceViol(i)
+  busCtgPowRealBalanceViol(i,k)
+  busCtgPowImagBalanceViol(i,k)
+  busCtgVoltMagPowImagCompViol(i,k)
+
+* summary parameters
+  sumBusVoltMagLoViol
+  sumBusVoltMagUpViol
+  sumGenPowRealLoViol
+  sumGenPowRealUpViol
+  sumGenPowImagLoViol
+  sumGenPowImagUpViol
+  sumLineCurrMag1UpViol
+  sumLineCurrMag2UpViol
+  sumXfmrPowMag1UpViol
+  sumXfmrPowMag2UpViol
+  sumSwshAdmImagLoViol
+  sumSwshAdmImagUpViol
+  sumBusCtgVoltMagLoViol
+  sumBusCtgVoltMagUpViol
+  sumGenCtgPowRealLoViol
+  sumGenCtgPowRealUpViol
+  sumGenCtgPowImagLoViol
+  sumGenCtgPowImagUpViol
+  sumLineCtgCurrMag1UpViol
+  sumLineCtgCurrMag2UpViol
+  sumXfmrCtgPowMag1UpViol
+  sumXfmrCtgPowMag2UpViol
+  sumSwshCtgAdmImagLoViol
+  sumSwshCtgAdmImagUpViol
+  sumBusPowRealBalanceViol
+  sumBusPowImagBalanceViol
+  sumBusCtgPowRealBalanceViol
+  sumBusCtgPowImagBalanceViol
+  sumBusCtgVoltMagPowImagCompViol
+  maxBusVoltMagLoViol
+  maxBusVoltMagUpViol
+  maxGenPowRealLoViol
+  maxGenPowRealUpViol
+  maxGenPowImagLoViol
+  maxGenPowImagUpViol
+  maxLineCurrMag1UpViol
+  maxLineCurrMag2UpViol
+  maxXfmrPowMag1UpViol
+  maxXfmrPowMag2UpViol
+  maxSwshAdmImagLoViol
+  maxSwshAdmImagUpViol
+  maxBusCtgVoltMagLoViol
+  maxBusCtgVoltMagUpViol
+  maxGenCtgPowRealLoViol
+  maxGenCtgPowRealUpViol
+  maxGenCtgPowImagLoViol
+  maxGenCtgPowImagUpViol
+  maxLineCtgCurrMag1UpViol
+  maxLineCtgCurrMag2UpViol
+  maxXfmrCtgPowMag1UpViol
+  maxXfmrCtgPowMag2UpViol
+  maxSwshCtgAdmImagLoViol
+  maxSwshCtgAdmImagUpViol
+  maxBusPowRealBalanceViol
+  maxBusPowImagBalanceViol
+  maxBusCtgPowRealBalanceViol
+  maxBusCtgPowImagBalanceViol
+  maxBusCtgVoltMagPowImagCompViol;
